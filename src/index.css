@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&family=Manrope:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-saffron: #D05316;
+  --color-saffron-dark: #A63F0E;
+  --color-gold: #C5A059;
+  --color-gold-light: #E8D399;
+  --color-charcoal: #2A2421;
+  --color-charcoal-light: #3D3531;
+  --color-maroon: #7B1E22;
+  --color-maroon-dark: #4F1012;
+  --color-ivory: #FDF9F1;
+  --color-ivory-dark: #F5ECD5;
+
+  --font-serif: "Rozha One", ui-serif, Georgia, serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-ivory text-charcoal font-sans antialiased overflow-x-hidden;
+  }
+}
+
+.pattern-bg {
+  background-image: radial-gradient(rgba(197, 160, 89, 0.2) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
